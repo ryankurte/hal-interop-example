@@ -1,0 +1,21 @@
+cargo-features = ["rename-dependency"]
+
+[package]
+name = "hal-backport-example"
+version = "0.1.0"
+authors = ["Ryan Kurte <ryankurte@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+
+[dependencies.hal-v3]
+package = "embedded-hal"
+features = ["unproven"]
+git = "https://github.com/ryankurte/embedded-hal"
+tag = "v0.3.0"
+
+[dependencies.hal-v2]
+package = "embedded-hal"
+features = ["unproven"]
+git = "https://github.com/ryankurte/embedded-hal"
+tag = "v0.2.3"
