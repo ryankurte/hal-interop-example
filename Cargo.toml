@@ -18,4 +18,4 @@ tag = "v0.3.0"
 package = "embedded-hal"
 features = ["unproven"]
 git = "https://github.com/ryankurte/embedded-hal"
-tag = "v0.2.3"
+tag = "v0.2.4"
